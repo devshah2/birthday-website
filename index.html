@@ -12,7 +12,8 @@
 
 
         <h2 id="text1"></h2>
-        <button id="but" onclick="myFunction()">Surprise</button>
+        <button id="but1" onclick="myFunction1()">Surprise 1</button>
+        <button id="but" onclick="myFunction()">Surprise 2</button>
 
 
     </div>
@@ -77,6 +78,7 @@
     window.onload = function () {
         // Globals
         document.getElementById('but').style.visibility = 'hidden';
+        document.getElementById('but1').style.visibility = 'hidden';
         var random = Math.random
             , cos = Math.cos
             , sin = Math.sin
@@ -307,6 +309,7 @@
             else {
                 setTimeout(function () {
                     document.getElementById('but').style.visibility = 'visible';
+                    document.getElementById('but1').style.visibility = 'visible';
                 }, 2000);
             }
 
@@ -317,6 +320,16 @@
         let person = prompt("Please enter your name (first name all small)", "dev");
         if (person == "edhita") {
             window.location.href='http://www.storyjumper.com/book/showframe/142139431/63555393ce603#'
+        } else {
+            window.alert("invalid access request");
+        }
+        
+    }
+
+    function myFunction1(){
+        let person = prompt("Please enter your name (first name all small)", "dev");
+        if (person == "edhita") {
+            window.location.href='https://drive.google.com/file/d/1DgdwOYvCcaXSQUJUzCgokIl6gxi9MWNj/view?usp=sharing'
         } else {
             window.alert("invalid access request");
         }
